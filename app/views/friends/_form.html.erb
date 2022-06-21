@@ -11,32 +11,28 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+  <div class="field form-group">
+    <%= form.text_field :first_name, class:"form-control", placeholder:"first name"%>
   </div>
 
-  <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+  <div class="field form-group">
+    <%= form.text_field :last_name, class:"form-control", placeholder:"last name" %>
   </div>
 
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+  <div class="field form-group">
+    <%= form.text_field :email, class:"form-control", placeholder:"email" %>
   </div>
 
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+  <div class="field form-group">
+    <%= form.text_field :phone, class:"form-control", placeholder:"phone" %>
   </div>
 
-  <div>
-    <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
+  <div class="field form-group">
+    <%= form.text_field :twitter, class:"form-control", placeholder:"twitter" %>
   </div>
+  <br>
 
-  <div>
-    <%= form.submit %>
+  <div class="action">
+    <%= form.submit class:"btn btn-secondary" %>
   </div>
 <% end %>
